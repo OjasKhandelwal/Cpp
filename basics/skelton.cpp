@@ -1,4 +1,5 @@
 #include <iostream>
+//or
 #include <bits/stdc++.h>  //includes all the libraries
 using namespace std;  //this uses std in every command by default
 int main() {
