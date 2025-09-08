@@ -42,7 +42,7 @@ void DeleteAtEnd(node* &head){
     }
     node* lastnode = secondlastnode->next;
     secondlastnode ->next = NULL;
-    free(lastnode);
+    delete lastnode;
     
 }
 
@@ -62,7 +62,7 @@ void DeleteAtMiddle(node* &head , int position){
     }
     node* currentnode = prev->next;
     prev->next = currentnode -> next;
-    free(currentnode);
+    delete currentnode;
     
 }
 
