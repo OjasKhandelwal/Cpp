@@ -47,7 +47,7 @@ void DeleteAtEnd(node* &head){
 }
 
 
-void DeleteAtMiddle(node* &head , int position){
+void DeleteAtAnyPosition(node* &head , int position){
     
     if(position == 1){
         DeleteAtStart(head);
@@ -96,7 +96,7 @@ int main(){
     
     cout<<"\n";
 
-    DeleteAtMiddle(head ,3);
+    DeleteAtAnyPosition(head ,3);
     traverse(head);
     return 0;
 }
