@@ -45,7 +45,7 @@ void InsertAtEnd(node* &head , int val){
 }
 
 
-void InsertAtMiddle(node* &head , int val , int position){
+void InsertAtAnyPosition(node* &head , int val , int position){
     if(position == 1){
         InsertAtHead(head , val);
         return;
@@ -87,7 +87,7 @@ int main(){
     traverse(head);
     
     cout<<"\n";
-    InsertAtMiddle(head , 33 , 4);
+    InsertAtAnyPosition(head , 33 , 4);
     traverse(head);
 
     return 0;
